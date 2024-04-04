@@ -1,0 +1,82 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  overflow: auto;
+  background-color: darkgrey;
+}
+
+.header {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.searchBar input {
+  height: 2rem;
+  width: auto;
+  border-radius: 2rem;
+}
+
+.searchBar button {
+  background-color: rosybrown;
+  border: solid 1px black;
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.search-results-container {
+  width: 100%;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.book-card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: rgb(122, 104, 104);
+}
+
+.book-cover {
+  width: 100%;
+  overflow: hidden;
+}
+
+.book-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.book-details {
+  text-align: center;
+}
